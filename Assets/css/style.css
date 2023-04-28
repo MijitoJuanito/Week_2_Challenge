@@ -1,0 +1,212 @@
+
+:root {
+
+    --main_color: #E5BEEC;
+    --secondary_color: #2A2F4F;
+    --nav_color: #917FB3;
+    --primary_text_color: black;
+    --secondary_text_color: #FDE2F3;
+
+}
+
+body {
+    background-color: var(--main_color);
+}
+
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--secondary_color);
+    color: var(--secondary_text_color);
+}
+
+h1{
+    font-size: 70px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: var(--secondary_text_color);
+    text-decoration: none;
+}
+
+ nav a:hover {
+    background-color: var(--main_color) ;
+    color: var(--primary_text_color);
+}
+
+.main_image {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../Images/pokemon-water-play-waterfall-wallpaper-thumb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+main {
+    width: 100%;
+    display: inline-block;
+    background-color: var(--main_color);
+    color: var(--primary_text_color);
+}
+
+
+.bio {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--main_color);
+    color: var(--primary_text_color);
+}
+
+.bio h2{
+    font-size: 50px;
+    margin-bottom: 75px;
+    text-align: left;
+}
+
+.bio p {
+    margin-top: -100px;
+    margin-left: 350px;
+}
+
+.work {
+    overflow: hidden;
+}
+
+
+  .work h2{
+    font-size: 50px;
+    margin-bottom: 75px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.work p {
+    position: relative;
+    color: white;
+    margin-left: 400px;
+    margin-top: -20px;
+
+}
+  
+  .work span {
+    background-color: black;
+  }
+    
+ 
+ 
+ 
+  .fit-picture {
+    width: 250px;
+    height: 125px;
+    margin-left: 400px;
+    margin-top: -100px;
+    border-style: solid;
+    border-width: 5px;
+    
+}
+
+
+  .fit-picture:hover{
+    opacity: .5;
+  }
+
+  .fit-picture:focus::after{
+    width: 500px;
+    height: 250px;
+  }
+
+
+
+
+.contact {
+    margin-top: 250px;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--main_color);
+    color: var(--primary_text_color);
+}
+
+.contact h2{
+    font-size: 50px;
+    margin-bottom: 75px;
+    text-align: left;
+}
+
+.links {
+    margin-top: -125px;
+    padding-top: 15px;
+    margin-left: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.links a {
+    color: var(--primary_text_color);
+    text-decoration: underline;
+}
+
+ .links a:hover {
+    background-color: var(--secondary_color) ;
+    color: var(--secondary_text_color);
+}
+
+
+.footer{
+    padding: 30px; 
+    width: 100%;
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: var(--secondary_color);
+}
+ .footer h3 {
+    font-size: 40px;
+    color: var(--secondary_text_color);
+ }
+
+
+@media screen and (max-width: 768px) {
+    main,
+    nav,
+    footer {
+        flex-direction: column;
+    }
+    
+}
