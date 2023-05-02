@@ -1,4 +1,4 @@
-
+/* section of variables that have been reused multiple times through the css */
 :root {
 
     --main_color: #E5BEEC;
@@ -8,19 +8,19 @@
     --secondary_text_color: #FDE2F3;
 
 }
-
+/* background color of page */
 body {
     background-color: var(--main_color);
 }
 
-
+/* the spcaing and color for the header */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--secondary_color);
     color: var(--secondary_text_color);
 }
-
+/* The font for the header */
 h1{
     font-size: 70px;
     margin-bottom: 5px;
@@ -28,7 +28,7 @@ h1{
 }
 
 
-
+/* the navigation font and spacing in the header */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -36,26 +36,26 @@ h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
 }
-
+/* no style to the listing  */
 .header nav ul {
     list-style-type: none;
 }
-
+/* how the listing is spaced out  */
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* the color for the list of navigations */
 a {
     color: var(--secondary_text_color);
     text-decoration: none;
 }
-
+/* once the mouse is hovered over each listing element it will change color and background color */
  nav a:hover {
     background-color: var(--main_color) ;
     color: var(--primary_text_color);
 }
-
+/* the main image on the page when first loaded */
 .main_image {
     height: 500px;
     width: 100%;
@@ -65,7 +65,7 @@ a {
     background-position: center;
 }
 
-
+/* the layout and color for the whole webpage body */
 main {
     width: 100%;
     display: inline-block;
@@ -73,7 +73,7 @@ main {
     color: var(--primary_text_color);
 }
 
-
+/* the layout and font sizing and color for the first body section */
 .bio {
     margin-bottom: 20px;
     padding: 50px;
@@ -82,68 +82,79 @@ main {
     background-color: var(--main_color);
     color: var(--primary_text_color);
 }
-
+/* where the header is layed out and the sizing for the header */
 .bio h2{
     font-size: 50px;
     margin-bottom: 75px;
     text-align: left;
 }
-
+/* the first body paragraph with the layout leaving it to the left side of the page */
 .bio p {
     margin-top: -100px;
     margin-left: 350px;
 }
-
+/* the spacing for the second section of the page */
 .work {
-    overflow: hidden;
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-
+/* the header's font and spacing laying it on the right side of the page */
   .work h2{
     font-size: 50px;
     margin-bottom: 75px;
     text-align: left;
     margin-left: 50px;
 }
-
-.work p {
+/* giving the contents of this section the flexible look where it would layout across the page nicely  */
+.work-contents{
+    padding: 10px;
+    flex: 0 0 300px;
+    margin: 20px; 
+}
+/* the labling of each project */
+.work-contents p {
     position: relative;
     color: white;
-    margin-left: 400px;
+    margin-left: 0px;
     margin-top: -20px;
 
 }
-  
-  .work span {
+  /* the background of the project label so it can be seen clearly what project is what */
+  .work-contents span {
     background-color: black;
+    position: relative;
   }
-    
- 
- 
- 
-  .fit-picture {
-    width: 250px;
-    height: 125px;
-    margin-left: 400px;
-    margin-top: -100px;
+
+/* the scaling of the fisrt project image */
+  .first-challenge{
+    width: 400px ;
+    height: 225px;
+    border-style: solid;
+    border-width: 5px;
+  }
+/* the scaling of the second image */
+  .fit-picture2 {
+    width: 300px;
+    height: 150px;
     border-style: solid;
     border-width: 5px;
     
 }
-
-
-  .fit-picture:hover{
+/* gives the first and second image the look of being highlighted when the mouse courser is hovering the image */
+ .first-challenge:hover{
+    opacity: .5;
+ }
+  .fit-picture2:hover{
     opacity: .5;
   }
 
-  .fit-picture:focus::after{
-    width: 500px;
-    height: 250px;
-  }
 
 
-
-
+/* layout for the contact information along with font sizing and color  */
 .contact {
     margin-top: 250px;
     margin-bottom: 20px;
@@ -153,13 +164,13 @@ main {
     background-color: var(--main_color);
     color: var(--primary_text_color);
 }
-
+/* the header sizing and placement */
 .contact h2{
     font-size: 50px;
     margin-bottom: 75px;
     text-align: left;
 }
-
+/* the spacing for the links */
 .links {
     margin-top: -125px;
     padding-top: 15px;
@@ -167,27 +178,27 @@ main {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* the listing style */
 .links ul {
     list-style-type: none;
 }
-
+/* how each link is spaced and aligned */
 .links ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* the color of the link when it is not being acted on */
 .links a {
     color: var(--primary_text_color);
     text-decoration: underline;
 }
-
+/* when the link is hoved it will change color and background color */
  .links a:hover {
     background-color: var(--secondary_color) ;
     color: var(--secondary_text_color);
 }
 
-
+/* footer of the page spacing and font style */
 .footer{
     padding: 30px; 
     width: 100%;
@@ -196,12 +207,13 @@ main {
     text-align: center;
     background-color: var(--secondary_color);
 }
+/* the font size and color  */
  .footer h3 {
     font-size: 40px;
     color: var(--secondary_text_color);
  }
 
-
+/* when the screen resolution changes so will the webpage along with the corresponding resolution */
 @media screen and (max-width: 768px) {
     main,
     nav,
